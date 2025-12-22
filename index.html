@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Help Desk | Premium Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>IT Support</span>
+            </div>
+            <nav class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Clients</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-box-open"></i>
+                        <span>Assets</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-comment-dots"></i>
+                        <span>Messages</span>
+                    </a>
+                </li>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-cog"></i>
+                    <span>Setup</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-viewport">
+            <header>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search tickets, assets or clients...">
+                </div>
+                <div class="user-profile">
+                    <div class="notifications">
+                        <i class="far fa-bell" style="font-size: 1.2rem; cursor: pointer;"></i>
+                    </div>
+                    <div class="user-info" style="text-align: right;">
+                        <p style="font-weight: 600;">Alex Johnson</p>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">IT Administrator</p>
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=38bdf8&color=fff" alt="Avatar"
+                        class="avatar">
+                </div>
+            </header>
+
+            <!-- Dashboard Stats -->
+            <div class="stats-grid">
+                <div class="stat-card animate-fade-in" style="animation-delay: 0.1s;">
+                    <p class="stat-label">Total Tickets</p>
+                    <p class="stat-value">1,284</p>
+                    <div style="margin-top: 10px; font-size: 0.8rem; color: var(--success);">
+                        <i class="fas fa-arrow-up"></i> 12% from last month
+                    </div>
+                </div>
+                <div class="stat-card purple animate-fade-in" style="animation-delay: 0.2s;">
+                    <p class="stat-label">Open Tickets</p>
+                    <p class="stat-value">42</p>
+                    <div style="margin-top: 10px; font-size: 0.8rem; color: var(--warning);">
+                        <i class="fas fa-clock"></i> 5 Urgent pending
+                    </div>
+                </div>
+                <div class="stat-card green animate-fade-in" style="animation-delay: 0.3s;">
+                    <p class="stat-label">Avg. Resolution Time</p>
+                    <p class="stat-value">2h 15m</p>
+                    <div style="margin-top: 10px; font-size: 0.8rem; color: var(--accent-blue);">
+                        <i class="fas fa-bolt"></i> +3% Efficiency
+                    </div>
+                </div>
+                <div class="stat-card animate-fade-in"
+                    style="animation-delay: 0.4s; border: 1px dashed var(--accent-blue); background: transparent;">
+                    <div
+                        style="height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer;">
+                        <i class="fas fa-plus-circle"
+                            style="font-size: 1.5rem; color: var(--accent-blue); margin-bottom: 0.5rem;"></i>
+                        <p style="color: var(--accent-blue); font-weight: 600;">Add Widget</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticket Table Section -->
+            <div class="ticket-section animate-fade-in" style="animation-delay: 0.5s;">
+                <div class="section-header">
+                    <h2>Ticket Overview</h2>
+                    <button id="btnNewTicket"
+                        style="background: linear-gradient(to right, var(--accent-blue), var(--accent-purple)); border: none; padding: 0.8rem 1.5rem; border-radius: 12px; color: white; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-plus"></i> New Ticket
+                    </button>
+                </div>
+
+                <div class="ticket-tabs">
+                    <div class="tab active">My Tickets (24)</div>
+                    <div class="tab">Group Tickets (42)</div>
+                    <div class="tab">Flagged</div>
+                    <div class="tab">Recent</div>
+                    <div class="tab">Archived</div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Updated</th>
+                            <th>Request Type</th>
+                            <th>Request Detail</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Alert</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ticketList">
+                        <!-- Tickets will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
