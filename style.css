@@ -130,6 +130,7 @@ header {
     background: transparent;
     border: none;
     color: var(--text-primary);
+    color: var(--text-primary);
     width: 100%;
     outline: none;
 }
@@ -333,4 +334,5 @@ tr:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
+
 }
