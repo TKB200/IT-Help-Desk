@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | IT Support Help Desk</title>
+    <title>Login | IT Support Help Desk SYS </title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -96,7 +96,7 @@
                 <i class="fas fa-microchip"></i>
                 <span>IT Support</span>
             </div>
-            <h1>Welcome Back</h1>
+            <h1>Hey Welcome Back</h1>
             <p>Please enter your details to sign in.</p>
 
             <form action="auth.php" method="POST">
@@ -119,5 +119,6 @@
         </div>
     </div>
 </body>
+
 
 </html>
